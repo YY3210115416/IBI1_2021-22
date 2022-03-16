@@ -10,4 +10,6 @@ d = b-c
 e = a-b
 #comparation between d and e
 print(d>e)
-#It is false, so e is bigger.The rate of new cases is greater in 2021
+#It is false, so e is bigger.2022 has the greatest number of new COVID-19 cases
+
+#Booleans

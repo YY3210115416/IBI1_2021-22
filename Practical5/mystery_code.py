@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer:draw a ramdom number between 1 and 100 if progress >=10, let progress +1 if progress < 10
+# Answer:Let progress start at 0 and add 1 at a time, until progress=10, and then draw a number randomly between 1 and 100.
 
 # Import libraries
 # randint allows drawing a random number,
