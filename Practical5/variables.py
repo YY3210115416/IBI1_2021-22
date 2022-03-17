@@ -13,3 +13,38 @@ print(d>e)
 #It is false, so e is bigger.2022 has the greatest number of new COVID-19 cases
 
 #Booleans
+
+X="1"
+Y="2"
+W=X and Y
+print("W =",W)
+
+X=520
+Y=250
+W=X and Y
+print("W =",W)
+
+X="A"
+Y="B"
+W=X and Y
+print("W =",W)
+
+X=0
+Y=1
+W=X and Y
+print("W =",W)
+
+X=1
+Y=0
+W=X and Y
+print("W =",W)
+
+X="A"
+Y=" "
+W=X and Y
+print("W =",W)
+
+X=""
+Y="A"
+W=X and Y
+print("W =",W)
