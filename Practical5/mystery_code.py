@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer:Let progress start at 0 and add 1 at a time, until progress=10, and then draw a number randomly between 1 and 100.
+# Answer:Let progress start at 0,and when it is smaller than 10,let it add 1 at a time and draw a random number, until progress=10, and then print the last random number drawn between 1 and 100.
 
 # Import libraries
 # randint allows drawing a random number,
