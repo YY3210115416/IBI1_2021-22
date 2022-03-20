@@ -14,37 +14,37 @@ print(d>e)
 
 #Booleans
 
-X="1"
-Y="2"
+X=bool("1")
+Y=bool("2")
 W=X and Y
 print("W =",W)
 
-X=520
-Y=250
+X=bool(520)
+Y=bool(250)
 W=X and Y
 print("W =",W)
 
-X="A"
-Y="B"
+X=bool("A")
+Y=bool("B")
 W=X and Y
 print("W =",W)
 
-X=0
-Y=1
+X=bool(0)
+Y=bool(1)
 W=X and Y
 print("W =",W)
 
-X=1
-Y=0
+X=bool(1)
+Y=bool(0)
 W=X and Y
 print("W =",W)
 
-X="A"
-Y=" "
+X=bool("A")
+Y=bool(" ")
 W=X and Y
 print("W =",W)
 
-X=""
-Y="A"
+X=bool("")
+Y=bool("A")
 W=X and Y
 print("W =",W)
