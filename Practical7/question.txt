@@ -1,0 +1,4 @@
+Question: How have total cases developed overtime in Spain?
+Line number: 6721-6812
+Result: There is nearly no cases in Spain before 2020/3/1, and the number of total cases grows rapidly in 2020/3.
+
