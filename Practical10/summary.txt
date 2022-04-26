@@ -1,4 +1,5 @@
 In this global alignment, if two amino acid match, the score+1, otherwise, the score remain the same.
+
 Finding: 
 1. The comparison between human and mouse:
                   The alignment score: 279
@@ -12,6 +13,7 @@ Finding:
                   The alignment score: 9
                   The percentage of identical amino acides:0.031
 
-Interpretation: In the comparison between human and mouse, the percentage of identical amino acides of DLX5 protein is about 0.965, 
+Interpretation: 
+In the comparison between human and mouse, the percentage of identical amino acides of DLX5 protein is about 0.965, 
                         which indicates that Human and mouse cells may perform a kind of similar function. It is also possible that human and mouse
                         are closely related and may have a common ancestor.
