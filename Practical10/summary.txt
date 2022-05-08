@@ -1,16 +1,14 @@
-In this global alignment, if two amino acid match, the score+1, otherwise, the score remain the same.
-
 Finding: 
 1. The comparison between human and mouse:
-                  The alignment score: 279
+                  The alignment score: 1490
                   The percentage of identical amino acides:0.965
 
 2. The comparison between human and random sequence:
-                  The alignment score: 8
+                  The alignment score: -351
                   The percentage of identical amino acides:0.028
 
 3. The comparison between mouse and random sequence:
-                  The alignment score: 9
+                  The alignment score: -348
                   The percentage of identical amino acides:0.031
 
 Interpretation: 

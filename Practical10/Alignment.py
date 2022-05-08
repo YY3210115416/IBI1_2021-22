@@ -1,4 +1,9 @@
 import re
+import pandas as pd
+
+file="BLOSUM.xlsx"
+score=pd.read_excel(file)
+print(score.iloc['A','T'])
 
 z=open('DLX5_human.fa') 
 x=open('DLX5_mouse.fa') 
@@ -28,32 +33,58 @@ a=len(hum)
 b=len(mou)
 c=len(ran)
 
+
+match1=0
 score1=0
 for i in range(len(hum_list)):
+    X=hum_list[i]
+    Y=mou_list[i]
+    Z=score.loc[score['First']==X,Y]
+    value=int(Z)
+    score1+=value
     if hum_list[i]==mou_list[i]:
-        score1=score1+1
+        match1=match1+1
     else:
-        score1=score1
-percentage1=score1/len(hum_list)
-print(score1) 
+        match1=match1
+percentage1=match1/len(hum_list)
+print(match1) 
 print(percentage1)
+print(score1)
    
-score2=0
+match2=0
 for i in range(len(hum_list)):
     if hum_list[i]==ran_list[i]:
-        score2=score2+1
+        match2=match2+1
     else:
-        score2=score2
-percentage2=score2/len(hum_list)
-print(score2) 
+        match2=match2
+percentage2=match2/len(hum_list)
+print(match2) 
 print(percentage2)
 
-score3=0
+match3=0
 for i in range(len(hum_list)):
     if ran_list[i]==mou_list[i]:
-        score3=score3+1
+        match3=match3+1
     else:
-        score3=score3
-percentage3=score3/len(hum_list)
-print(score3) 
+        match3=match3
+percentage3=match3/len(hum_list)
+print(match3) 
 print(percentage3)
+
+A=[]
+for i in range(23):
+    if score.iloc[i,0]=="A":
+        A.append(True)
+    else:
+        A.append(False)
+
+A_data=score.iloc[A]
+
+B=[]
+for i in range(23):
+    if A_data.iloc[i,0]=="A":
+        B.append(True)
+    else:
+        B.append(False)
+B_data=A_data.iloc[B]
+print(B_data)
