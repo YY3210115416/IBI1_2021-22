@@ -6,6 +6,7 @@ print(PC)
 
 #draw the scatter plot
 import matplotlib.pyplot as plt
+
 #add data
 x=paternal_age
 y=chd
@@ -16,9 +17,10 @@ plt.ylabel('chd')
 plt.show()
 
 #print chd for a givin paternal_age
-age=40
+age=input("age:")
+age=int(age)
 risk=PC[age]
-print(risk)
+print("risk:",risk)
 
 #List manipulation
 marks=[45,36,86,57,53,92,65,45]
@@ -29,8 +31,10 @@ print(marks)
 
 #draw the boxplot
 import matplotlib.pyplot as plt
-plt.boxplot(marks,vert=True,whis=1.5,patch_artist=True,meanline=True,showbox=True,
+
+bp=plt.boxplot(marks,vert=True,whis=1.5,patch_artist=True,meanline=True,showbox=True,
             showcaps=True,showfliers=True,notch=False)
+plt.ylabel("Marks")
 plt.show()
 
 #calculate the average mark
