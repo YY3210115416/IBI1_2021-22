@@ -34,9 +34,16 @@ import matplotlib.pyplot as plt
 
 bp=plt.boxplot(marks,vert=True,whis=1.5,patch_artist=True,meanline=True,showbox=True,
             showcaps=True,showfliers=True,notch=False)
+plt.title("Rob Marks")
+plt.xlabel("Rob")
 plt.ylabel("Marks")
 plt.show()
 
 #calculate the average mark
-print(sum(marks)/8)
+average_mark=sum(marks)/8
+print(average_mark)
+if average_mark<60:
+    print("Rob failed this ICA")
+else:
+    print("Rob passed this ICA")
 #the average mark is 59.875,which is smaller than 60,so Rob has failed this ICA.
