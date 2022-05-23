@@ -40,6 +40,8 @@ boxplot=plt.boxplot(China_new_data,
             showfliers=True,
             notch=False,
             labels=labels)
+plt.ylabel('number')
+plt.title('new cases and new deaths in China')
 plt.show()
 
 #plot new cases in China over time with labels

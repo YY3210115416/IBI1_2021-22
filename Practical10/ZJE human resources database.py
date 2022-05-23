@@ -8,3 +8,10 @@ class Staff(object):
   
 yy=Staff("Yin", "Yang", "International Campus", "faculty")
 print(yy.first_name,yy.last_name,yy.location,yy.role)
+
+a=input("first_name:")
+b=input("last_name:")
+c=input("location:")
+d=input("role:")
+staff=Staff(a,b,c,d)
+print(staff.first_name,staff.last_name,staff.location,staff.role)
