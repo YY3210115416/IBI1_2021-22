@@ -17,7 +17,7 @@ plt.ylabel('chd')
 plt.show()
 
 #print chd for a givin paternal_age
-age=input("age:")
+age=30  #The variable "age" can be modified. 
 age=int(age)
 risk=PC[age]
 print("risk:",risk)
@@ -34,8 +34,8 @@ import matplotlib.pyplot as plt
 
 bp=plt.boxplot(marks,vert=True,whis=1.5,patch_artist=True,meanline=True,showbox=True,
             showcaps=True,showfliers=True,notch=False)
-plt.title("Rob Marks")
-plt.xlabel("Rob")
+plt.title("Practical Marks")
+plt.xlabel("Practical")
 plt.ylabel("Marks")
 plt.show()
 
