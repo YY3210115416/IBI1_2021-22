@@ -63,6 +63,8 @@ plt.show()
 #judge whether 'translation'terms contain more childNodes than overall GO
 ave=mean(average_list)
 ave_transition=mean(translation_number)
+print(ave)
+print(ave_transition)
 if ave>ave_transition:
     print("The translation terms contain, on average, a smaller number	of child nodes than the	overall	Gene Ontology.")
 else:
